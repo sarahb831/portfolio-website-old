@@ -209,7 +209,7 @@ a.button:hover, a.button:focus {
   width: 250px;
   margin-right: var(--standard-margin);
   height: auto;
-  border-radius: 30%;
+  border-radius: 50%;
 }
 
 .farm {
