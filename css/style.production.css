@@ -13,14 +13,13 @@ Tertiary Color (beige): #EBC29D
 }
 
 body {
-background-color: #cce1e9;
+  background-color: #cce1e9;
   color: #005b80;
   font-family: 'Muli', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.0;
+  line-height: 1;
   margin-left: 40px;
-/*  max-width: 700px; */
 }
 
 header {
@@ -28,6 +27,11 @@ header {
   margin-top: 20px;
   font-weight: 700;
   font-size: 20px;
+  height: auto;
+}
+
+.header-logo {
+  width: 200px;
   height: auto;
 }
 
@@ -52,7 +56,6 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 300px;
           flex: 1 1 300px;
-
 }
 
 .page-header__item:last-child {
@@ -71,7 +74,6 @@ header {
 .navigation-list li {
   display: inline-block;
   margin-left: 20px;
-
 }
 
 .header-logo {
@@ -84,7 +86,6 @@ nav {
   display: inline-block;
   margin-left: 40px;
   margin-right: 40px;
-
 }
 
 .navigation-list-temp {
@@ -97,12 +98,13 @@ h1 {
   color: #036992;
   font-size: 22px;
   font-weight: 700;
-  line-height: 2.0;
+  line-height: 2;
 }
 
 .header1-no-wrap {
   clear: both;
 }
+
 h2 {
   font-size: 24px;
   font-weight: 700;
@@ -113,6 +115,7 @@ h3 {
   font-size: 18px;
   font-weight: 700;
 }
+
 form {
   position: relative;
   top: 20px;
@@ -120,15 +123,17 @@ form {
 }
 
 p {
-  // max-width: 600px;
+  /* max-width: 600px; */
 }
 
 th {
   font-weight: bold;
 }
+
 td {
   text-align: center;
 }
+
 /* footer {
   font-weight: 700;
   font-size: 20px;
@@ -172,16 +177,19 @@ button {
   border: none;
   display: inline-block;
   text-align: center;
+
   /* use font from outer container */
   font-family: inherit;
   background-color: #8c7083;
   color: black;
   text-decoration: none;
   padding: 10px;
+
   /* rounded corners */
   border-radius: 3px;
+
   /* bottom border with width of 2px, solid, and rgba format color black using transparency of 0.3 */
-  border-bottom: 2px solid rgba(0,0,0,0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.8s opacity;
   -o-transition: 0.8s opacity;
   transition: 0.8s opacity;
@@ -192,25 +200,31 @@ a.button {
   border: none;
   display: inline-block;
   text-align: center;
+
   /* use font from outer container */
   font-family: inherit;
   background-color: #8c7083;
   color: black;
   text-decoration: none;
   padding: 10px;
+
   /* rounded corners */
   border-radius: 3px;
+
   /* bottom border with width of 2px, solid, and rgba format color black using transparency of 0.3 */
-  border-bottom: 2px solid rgba(0,0,0,0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.8s opacity;
   -o-transition: 0.8s opacity;
   transition: 0.8s opacity;
 }
 
-button:hover, button:focus,
-a.button:hover, a.button:focus {
+button:hover,
+button:focus,
+a.button:hover,
+a.button:focus {
   /* mouse turns to hand when hovering */
   cursor: pointer;
+
   /* reduce opacity to 80% */
   opacity: 0.8;
 }
@@ -252,11 +266,11 @@ a.button:hover, a.button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
- text-align: center;
+  text-align: center;
 }
 
 .social-media {
-
+  /* placeholder */
 }
 
 .navigation-list__item--active {
@@ -268,6 +282,7 @@ a.button:hover, a.button:focus {
   display: inline-block;
   width: 33%;
 }
+
 /* using grid */
 .grid {
   display: -ms-grid;
@@ -287,7 +302,7 @@ a.button:hover, a.button:focus {
 .grid__item:last-child {
   grid-column: 3/3;
   grid-row: 3/1;
-}*/
+} */
 
 /* for smaller displays */
 @media all and (max-width: 500px) {
@@ -313,7 +328,6 @@ a.button:hover, a.button:focus {
     grid-column: auto/auto;
     grid-row: auto/auto;
   }
-
 }
 
 /* for animations */
@@ -321,9 +335,11 @@ a.button:hover, a.button:focus {
   0% {
     fill: #e1e1dd;
   }
+
   50% {
     fill: #2b2b2b;
   }
+
   100% {
     fill: #0c202f;
   }
@@ -332,24 +348,29 @@ a.button:hover, a.button:focus {
   0% {
     fill: #e1e1dd;
   }
+
   50% {
     fill: #2b2b2b;
   }
+
   100% {
     fill: #0c202f;
   }
 }
 
-#path4267, #path4291,#path4299 {
+#path4267,
+#path4291,
+#path4299 {
   -webkit-animation: 6s color-change infinite alternate linear;
           animation: 6s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
   from {
-    -webkit-transform: translate(0,50px);
-            transform: translate(0,50px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(150px, 50px);
             transform: translate(150px, 50px);
@@ -358,9 +379,10 @@ a.button:hover, a.button:focus {
 
 @keyframes cloud-move {
   from {
-    -webkit-transform: translate(0,50px);
-            transform: translate(0,50px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(150px, 50px);
             transform: translate(150px, 50px);
@@ -369,9 +391,10 @@ a.button:hover, a.button:focus {
 
 @-webkit-keyframes cloud-move-small {
   from {
-    -webkit-transform: translate(0,50px);
-            transform: translate(0,50px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(50px, 50px);
             transform: translate(50px, 50px);
@@ -380,20 +403,23 @@ a.button:hover, a.button:focus {
 
 @keyframes cloud-move-small {
   from {
-    -webkit-transform: translate(0,50px);
-            transform: translate(0,50px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(50px, 50px);
             transform: translate(50px, 50px);
   }
 }
+
 /* move tractor */
 @-webkit-keyframes tractor-move {
   from {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
+
   to {
     -webkit-transform: translate(200px, 0);
             transform: translate(200px, 0);
@@ -404,15 +430,32 @@ a.button:hover, a.button:focus {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
+
   to {
     -webkit-transform: translate(200px, 0);
             transform: translate(200px, 0);
   }
 }
 
-#path4823,#path4833,#path4834,#path4835,#path4836,#path4837,#path4841, #path4845,
-#path4849,#path4853,#path4855,#path4857,#path4859,#path4863,#path4867,
-#path4871,#path4875,#path4879,#path4883 {
+#path4823,
+#path4833,
+#path4834,
+#path4835,
+#path4836,
+#path4837,
+#path4841,
+#path4845,
+#path4849,
+#path4853,
+#path4855,
+#path4857,
+#path4859,
+#path4863,
+#path4867,
+#path4871,
+#path4875,
+#path4879,
+#path4883 {
   -webkit-animation-duration: 7s;
           animation-duration: 7s;
   -webkit-animation-name: tractor-move;
@@ -425,21 +468,20 @@ a.button:hover, a.button:focus {
           animation-timing-function: linear;
 }
 
-
 #path4833 {
-  color:#00cc00;
+  color: #0c0;
 }
-
 
 #path4853 {
-  color:#00cc00;
+  color: #0c0;
 }
-
 
 #path4855 {
-  color:#00cc00;
+  color: #0c0;
 }
-#path4267, #path4291 {
+
+#path4267,
+#path4291 {
   -webkit-animation-duration: 20s;
           animation-duration: 20s;
   -webkit-animation-name: cloud-move;
@@ -450,8 +492,9 @@ a.button:hover, a.button:focus {
           animation-direction: alternate;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  }
-#path4299{
+}
+
+#path4299 {
   -webkit-animation-duration: 20s;
           animation-duration: 20s;
   -webkit-animation-name: cloud-move-small;
@@ -462,13 +505,14 @@ a.button:hover, a.button:focus {
           animation-direction: alternate;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  }
+}
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
             transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 5px);
             transform: translate(100px, 5px);
@@ -480,6 +524,7 @@ a.button:hover, a.button:focus {
     -webkit-transform: translate(446px, 48px);
             transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 5px);
             transform: translate(100px, 5px);
@@ -487,7 +532,7 @@ a.button:hover, a.button:focus {
 }
 
 #path4267 {
-  -webkit-transform: scale(2.0);
-      -ms-transform: scale(2.0);
-          transform: scale(2.0);
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
 }
