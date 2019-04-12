@@ -27,6 +27,7 @@ Tertiary Color (beige): #EBC29D
   --base-font: 400;
   --standard-margin: 40px;
   --narrow-margin: 20px;
+  --white: #fff;
 }
 
 body {
@@ -207,7 +208,7 @@ a.button:focus {
 }
 
 .button__secondary {
-  background-color: var(--secondary-button-background-color);
+  background-color: var(--secondary-button-color);
   color: var(--gray);
 }
 
@@ -259,7 +260,7 @@ a.button:focus {
 }
 
 .grid__item {
-  background-color: var(--secondary-background-color);
+  background-color: var(--white);
   padding: var(--narrow-margin);
   width: auto;
 }
