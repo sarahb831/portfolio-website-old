@@ -228,6 +228,7 @@ a.button:focus {
 .farm {
   display: flex;
   flex: 0 1 100px;
+  margin-top: -30px;
   border-radius: 50%;
 }
 
