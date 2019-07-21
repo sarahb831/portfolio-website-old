@@ -267,7 +267,8 @@ a.button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  text-align: left;
+  margin-left: 40px;
 }
 
 .social-media {
