@@ -242,7 +242,8 @@ a.button:focus {
   clear: both;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
+  margin-left: 40px;
 }
 
 .social-media {
