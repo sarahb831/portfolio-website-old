@@ -15,12 +15,12 @@ Tertiary Color (beige): #EBC29D
   --primary-color: #005b80;
   --secondary-color: #8c7083;
   --dark-grey: #2b2b2b;
-  --background-color: #cce1e9;
-  --h1-color: #036992;
+  --background-color: #5774b9;
+  --h1-color: white;
   --active-color: #489c79;
   --secondary-button-color: #ebc29d;
   --gray: #2b2b2b;
-  --light-gray: #e1e1dd;
+  --light-gray: white;
   --midnight-blue: #0c202f;
   --bright-green: #0c0;
   --bold-font: 700;
@@ -30,9 +30,16 @@ Tertiary Color (beige): #EBC29D
   --white: #fff;
 }
 
+html, body {
+  min-height: 100%;
+  color: white;
+}
+
 body {
   background-color: var(--background-color);
-  color: var(--primary-color);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
   font-family: 'Muli', sans-serif;
   font-weight: var(--base-font);
   font-size: 16px;
@@ -43,7 +50,6 @@ body {
 }
 
 header {
-  position: relative;
   margin-top: var(--narrow-margin);
   font-weight: var(--bold-font);
   font-size: 20px;
@@ -53,6 +59,13 @@ header {
 .header-logo {
   width: 200px;
   height: auto;
+}
+
+h1,
+div,
+p {
+  color: white;
+  font-weight: var(--bold-font);
 }
 
 /* for browsers that don't support CSS grid
@@ -70,7 +83,7 @@ header {
 }
 
 .page-header__item {
-  /* allow to grow, yes shrink, based on 200px size */
+  /* allow to grow and shrink, based on 300px size */
   flex: 1 1 300px;
 }
 
@@ -85,6 +98,18 @@ header {
   list-style-type: none;
 }
 
+nav {
+  color: white;
+}
+
+a.navigation-list__item {
+  color: white;
+  font-weight: var(--bold-font);
+}
+
+ul.navigation-list {
+  color: white;
+}
 .navigation-list li {
   display: inline-block;
   margin-left: var(--narrow-margin);
@@ -109,13 +134,13 @@ nav {
 }
 
 h1 {
-  color: var(--h1-color);
+  color: white;
   font-size: 22px;
   font-weight: var(--bold-font);
   line-height: 2;
 }
 
-.header1-no-wrap {
+h1.header1-no-wrap {
   clear: both;
 }
 
@@ -134,14 +159,21 @@ form {
   position: relative;
   top: var(--narrow-margin);
   clear: both;
+  line-height: 1.5;
 }
 
-p {
-  /* max-width: 600px; */
+input,
+textarea {
+  width: 250px;
 }
 
 th {
   font-weight: bold;
+  font-size: 20px;
+}
+
+p {
+  /* max-width: 600px; */
 }
 
 td {
@@ -155,12 +187,13 @@ td {
 }
 */
 a {
-  color: black;
+  color: white;
+  font-weight: var(--bold-font);
 }
 
 a:visited {
   /* visited link */
-  color: var(--secondary-color);
+  color: white;
 }
 
 a:hover,
@@ -185,14 +218,13 @@ a.button {
 
   /* use font from outer container */
   font-family: inherit;
-  background-color: var(--secondary-color);
-  color: black;
+  font-weight: var(--bold-font);
+  background-color: white;
+  color: var(--background-color);
   text-decoration: none;
   padding: 10px;
-
   /* rounded corners */
   border-radius: 3px;
-
   /* bottom border with width of 2px, solid, and rgba format color black using transparency of 0.3 */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.8s opacity;
@@ -204,7 +236,6 @@ a.button:hover,
 a.button:focus {
   /* mouse turns to hand when hovering */
   cursor: pointer;
-
   /* reduce opacity to 80% */
   opacity: 0.8;
 }
@@ -221,10 +252,9 @@ a.button:focus {
 
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 100px;
   margin-right: var(--standard-margin);
   height: auto;
-  border-radius: 50%;
 }
 
 .farm {
@@ -238,12 +268,13 @@ a.button:focus {
   clear: both;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   margin-left: 40px;
 }
 
-.social-media {
-  /* placeholder */
+img.icon {
+  width: 3%;
+  height: auto;
 }
 
 .navigation-list__item--active {
@@ -254,6 +285,7 @@ a.button:focus {
 .grid__item {
   display: inline-block;
   width: 33%;
+  color: black;
 }
 
 /* using grid */
@@ -261,19 +293,21 @@ a.button:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+  color: black;
 }
 
 .grid__item {
   background-color: var(--white);
   padding: var(--narrow-margin);
   width: auto;
+  color: black;
 }
 
-/*
-.grid__item:last-child {
-  grid-column: 3/3;
-  grid-row: 3/1;
-} */
+.grid__item p,
+.grid__item a {
+  color: black;
+  font-weight: var(--base-font);
+}
 
 /* for smaller displays */
 @media all and (max-width: 500px) {
