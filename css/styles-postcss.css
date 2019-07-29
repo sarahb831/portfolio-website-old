@@ -1,19 +1,18 @@
-/* Colors used
-Background Color (sky blue): #CCE1E9
-Text Color (teal): #036992
-Foreground Color (teal): #006F62
-Secondary Color (mauve): #8C7083
-Tertiary Color (beige): #EBC29D
-*/
-
 /* set for all elements */
 * {
   box-sizing: border-box;
 }
 
+html, body {
+  min-height: 100%;
+  color: white;
+}
+
 body {
-  background-color: #cce1e9;
-  color: #005b80;
+  background-color: #5774b9;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
   font-family: 'Muli', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -24,7 +23,6 @@ body {
 }
 
 header {
-  position: relative;
   margin-top: 20px;
   font-weight: 700;
   font-size: 20px;
@@ -36,14 +34,21 @@ header {
   height: auto;
 }
 
-/* for browsers that don't support CSS grid
-.page-header__item {
-  display: inline-block;
-  width: 30%;
-  margin-bottom: 20px;
-
+h1 {
+  color: white;
+  font-weight: 700;
 }
-*/
+
+div {
+  color: white;
+  font-weight: 700;
+}
+
+p {
+  color: white;
+  font-weight: 700;
+}
+
 .page-header {
   display: flex;
   width: 100%;
@@ -51,7 +56,7 @@ header {
 }
 
 .page-header__item {
-  /* allow to grow, yes shrink, based on 200px size */
+  /* allow to grow and shrink, based on 300px size */
   flex: 1 1 300px;
 }
 
@@ -66,6 +71,18 @@ header {
   list-style-type: none;
 }
 
+nav {
+  color: white;
+}
+
+a.navigation-list__item {
+  color: white;
+  font-weight: 700;
+}
+
+ul.navigation-list {
+  color: white;
+}
 .navigation-list li {
   display: inline-block;
   margin-left: 20px;
@@ -90,13 +107,13 @@ nav {
 }
 
 h1 {
-  color: #036992;
+  color: white;
   font-size: 22px;
   font-weight: 700;
   line-height: 2;
 }
 
-.header1-no-wrap {
+h1.header1-no-wrap {
   clear: both;
 }
 
@@ -115,91 +132,77 @@ form {
   position: relative;
   top: 20px;
   clear: both;
+  line-height: 1.5;
 }
 
-p {
-  /* max-width: 600px; */
+input,
+textarea {
+  width: 250px;
 }
 
 th {
   font-weight: bold;
+  font-size: 20px;
 }
 
 td {
   text-align: center;
 }
 
-/* footer {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 2.0;
-}
-*/
 a {
-  color: black;
+  color: white;
+  font-weight: 700;
 }
 
 a:visited {
-  /* visited link */
-  color: #8c7083;
+  color: white;
 }
 
 a:hover {
   /* no underlining when hovering */
   text-decoration: none;
-  color: #036992;
+  color: white;
   transition: 0.8s opacity;
 }
 
 a:focus {
   /* no underlining when hovering */
   text-decoration: none;
-  color: #036992;
+  color: white;
   transition: 0.8s opacity;
 }
 
 a:active {
-  /* selected link */
   color: #489c79;
 }
 
 button {
-  /* overwrite browser defaults and reset border */
   border: none;
   display: inline-block;
   text-align: center;
-
-  /* use font from outer container */
   font-family: inherit;
-  background-color: #8c7083;
-  color: black;
+  font-weight: 700;
+  background-color: white;
+  color: #5774b9;
   text-decoration: none;
   padding: 10px;
-
-  /* rounded corners */
   border-radius: 3px;
-
   /* bottom border with width of 2px, solid, and rgba format color black using transparency of 0.3 */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.8s opacity;
 }
 
 a.button {
-  /* overwrite browser defaults and reset border */
   border: none;
   display: inline-block;
   text-align: center;
-
-  /* use font from outer container */
   font-family: inherit;
-  background-color: #8c7083;
-  color: black;
+  font-weight: 700;
+  background-color: white;
+  color: #5774b9;
   text-decoration: none;
   padding: 10px;
-
-  /* rounded corners */
   border-radius: 3px;
-
   /* bottom border with width of 2px, solid, and rgba format color black using transparency of 0.3 */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.8s opacity;
@@ -211,7 +214,6 @@ a.button:hover,
 a.button:focus {
   /* mouse turns to hand when hovering */
   cursor: pointer;
-
   /* reduce opacity to 80% */
   opacity: 0.8;
 }
@@ -228,15 +230,15 @@ a.button:focus {
 
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 100px;
   margin-right: 40px;
   height: auto;
-  border-radius: 50%;
 }
 
 .farm {
   display: flex;
   flex: 0 1 100px;
+  margin-top: -30px;
   border-radius: 50%;
 }
 
@@ -244,12 +246,13 @@ a.button:focus {
   clear: both;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   margin-left: 40px;
 }
 
-.social-media {
-  /* placeholder */
+img.icon {
+  width: 3%;
+  height: auto;
 }
 
 .navigation-list__item--active {
@@ -260,6 +263,7 @@ a.button:focus {
 .grid__item {
   display: inline-block;
   width: 33%;
+  color: black;
 }
 
 /* using grid */
@@ -267,19 +271,26 @@ a.button:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+  color: black;
+  text-align: center;
 }
 
 .grid__item {
   background-color: #fff;
   padding: 20px;
   width: auto;
+  color: black;
 }
 
-/*
-.grid__item:last-child {
-  grid-column: 3/3;
-  grid-row: 3/1;
-} */
+.grid__item p {
+  color: black;
+  font-weight: 400;
+}
+
+.grid__item a {
+  color: black;
+  font-weight: 400;
+}
 
 /* for smaller displays */
 @media all and (max-width: 500px) {
@@ -308,7 +319,7 @@ a.button:focus {
 /* for animations */
 @keyframes color-change {
   0% {
-    fill: #e1e1dd;
+    fill: white;
   }
 
   50% {
