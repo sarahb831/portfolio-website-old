@@ -292,6 +292,21 @@ img.icon {
   font-weight: 400;
 }
 
+img.full-width-scale {
+  width: 100%;
+  margin-right: 40px;
+}
+
+a.case-study-link {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 /* for smaller displays */
 @media all and (max-width: 500px) {
   .grid {

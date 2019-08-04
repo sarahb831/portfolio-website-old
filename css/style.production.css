@@ -318,6 +318,26 @@ img.icon {
   font-weight: 400;
 }
 
+img.full-width-scale {
+  width: 100%;
+  margin-right: 40px;
+}
+
+a.case-study-link {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 /* for smaller displays */
 @media all and (max-width: 500px) {
   .grid {
