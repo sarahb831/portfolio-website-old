@@ -43,149 +43,19 @@
       </p>
     </div>
     <div>
-      <h1>Skills</h1>
+      <h2>Skills</h2>
+      JavaScript &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Java &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      Node.js &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Express &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      React &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp React Native &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Redux<br><br>
+      Angular &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Vue.js &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CSS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+      HTML &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MySQL &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PostgreSQL &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Firebase<br><br>
+      RESTful &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MongoDB &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      Mongoose &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp jQuery &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JSX<br><br>
+      TypeScript &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+      Git &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Material Design &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bootstrap
+     <br><br>
+     Progressive Web Apps  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Data Visualization Tools<br><br><br>
     </div>
-
-    <div class="skills">
-        <ul class="lines">
-          <li class="line l--0">
-            <span class="line__label title">
-             
-            </span>
-          </li>
-          <li class="line l--25">
-            <span class="line__label">
-             Good
-            </span>
-          </li>
-          <li class="line l--50">
-            <span class="line__label">
-              Even Better
-            </span>
-          </li>
-          <li class="line l--75">
-            <span class="line__label">
-             Crazy Good
-            </span>
-          </li>
-          <li class="line l--100">
-            <span class="line__label">
-              So Amazing
-            </span>
-          </li>
-        </ul>
-        
-        <div class="charts">
-          <div class="chart chart--dev">
-            
-            <ul class="chart--horiz">
-              <li class="chart__bar bar2">
-                <span class="chart__label">
-                  JavaScript
-                </span>
-              </li>
-              <li class="chart__bar bar2">
-                <span class="chart__label">
-                  React
-                </span>
-              </li>
-              <li class="chart__bar bar2">
-                <span class="chart__label">
-                  JSX
-                </span>
-              </li>
-              <li class="chart__bar bar1">
-                <span class="chart__label">
-                  React Native
-                </span>
-              </li>
-              <li class="chart__bar bar1">
-                <span class="chart__label">
-                  Firebase
-                </span>
-              </li>
-              <li class="chart__bar bar2">
-                <span class="chart__label">
-                  Git
-                </span>
-              </li>
-              <li class="chart__bar bar2">
-                <span class="chart__label">
-                  CSS
-                </span>
-              </li>
-              <li class="chart__bar bar2">
-                <span class="chart__label">
-                  HTML
-                </span>
-              </li>
-              <li class="chart__bar bar1">
-                <span class="chart__label">
-                  Java
-                </span>
-              </li>
-              <li class="chart__bar bar1">
-                <span class="chart__label">
-                  Node.js
-                </span>
-              </li>
-              <li class="chart__bar bar1">
-                <span class="chart__label">
-                  Express
-                </span>
-              </li>
-              <li class="chart__bar bar1">
-                <span class="chart__label">
-                  Redux
-                </span>
-              </li>
-              <li class="chart__bar bar1">
-                <span class="chart__label">
-                Angular
-              </span>
-            </li>
-            <li class="chart__bar bar1">
-              <span class="chart__label">
-                Vue.js
-              </span>
-            </li>
-            <li class="chart__bar bar1">
-              <span class="chart__label">
-                PostgreSQL
-              </span>
-            </li>
-            <li class="chart__bar bar1">
-              <span class="chart__label">
-                RESTful
-              </span>
-            </li>
-            <li class="chart__bar bar1">
-              <span class="chart__label">
-                MongoDB
-              </span>
-            </li>
-            <li class="chart__bar bar1">
-              <span class="chart__label">
-                Mongoose
-              </span>
-            </li>
-            <li class="chart__bar bar2">
-              <span class="chart__label">
-                Progressive Web Apps
-              </span>
-            </li>
-            <li class="chart__bar bar2">
-              <span class="chart__label">
-                Styled Components
-              </span>
-            </li>
-
-          </ul>
-          </div>
-        </div>
-      </div>
-      
-
     
     <!-- Farm svg image -->
     <div class="farm">
@@ -203,8 +73,8 @@
          version="1.1"
          id="svg3713"
          xml:space="preserve"
-         width="500"
-         
+         width="1066.6667"
+         height="1066.6667"
          viewBox="0 0 1066.6667 1066.6667"
          sodipodi:docname="13595-NP28FVa.svg"
          inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
