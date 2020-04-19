@@ -1,52 +1,183 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sarah Beauchamp's Portfolio</title>
-	  <link rel="shortcut icon" href="img/favicon-32x32.ico">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  </head>
-  <body class="index-body" background="img/backyard-3.png">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sarah Beauchamp Portfolio Website</title>
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
+            crossorigin="anonymous" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli" >
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellota&display=swap"> 
+        <link rel="stylesheet"
+            href="css/styles.css" />
+        <script src="https://kit.fontawesome.com/dc1a92a643.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/sarah.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <header class="page-header">
-      <img src="img/smb-logo.png" class="header-logo page-header__item"  alt="Sarah Beauchamp's logo">
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-          </li>
-          <li role="presentation">
-              <a href="img/Beauchamp-Sarah-Resume.pdf" download="Beauchamp-Sarah-Resume.pdf" role="menuitem" class="navigation-list__item">My Resume</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="profile">
-      <img src="img/smbportfolio.jpg" class="profile__portrait" alt="picture of me">
-    <h3>
-        I'm Sarah Beauchamp, a full-stack web developer in California.
-    </h3>
-      <a href="work.html">See some of my work.<br><br></a>
-          <a href="contact.html">Contact me.</a>
-    </div>
-    <footer class="page-footer">   
-      <div class="social-media">
-          <br><br>Find me on<br>
-          <a href="https://www.linkedin.com/in/sarahmbeauchamp/"><img class="icon" src="img/iconfinder_linkedin_circle_gray_107149.svg" alt="LinkedIn"></a> 
-        <a href="https://github.com/sarahb831"><img class="icon" src="img\iconfinder_github_circle_gray_107139.svg" alt="GitHub"></a>
-      </div>
-    </footer>
-  </body>
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I'm Sarah Beauchamp
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end developer</p>
+            <img src="img/smbportfolio2.jpg" alt="picture of Sarah" class="intro__img">
+        </section>
+
+        <!-- My Services -->
+        <!--
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>what I do with design and development</p>
+                </div>
+
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>what I do with design and development</p>
+                </div>
+
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>what I do with design and development</p>
+                </div>
+            </div>
+        -->     <!-- / services -->
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title">My work</h2>
+            <p class="section__subtitle--work">A selection of my projects</p>
+
+            <div class="portfolio">
+                <!-- Portfolio item 1 -->
+                <div class="portfolio__item">
+                    <h3>React Webstore with PayPal</h3>
+                    <img class="portfolio__img" src="img/webstore1.png" 
+                        alt="React Webstore App screenshot" 
+                        class="portfolio__img">
+                    <p>A React-based webstore for renting out my goats as "lawnmowers".  It uses the Context API for a single source of
+                        truth as well as React-Router and a PayPal sandbox.
+                        </p>
+                        <a class="work-link" href="https://webstore-sarahb831.netlify.com/" target="_blank">React Webstore Link</a><br>
+                        <a class="work-link" href="https://github.com/sarahb831/webstore" target="_blank">React Webstore GitHub Repository</a><br><br>
+                        <img class="portfolio__imgs" src="img\webstore2.png" alt="More screenshots">
+                </div> 
+
+                <!-- Portfolio item 2 -->
+                <div class="portfolio__item">
+                <h3>React Native Mobile Chat App</h3>
+                <img class="portfolio__img" src="img\chat1.png" alt="React Native Mobile Chat App screenshot">
+                <p>A chat application built using React Native.  It uses the Expo.io open source platform and stores
+                    conversations in the Google Firebase Firestore Database. Users are authenticated with Google
+                    Firebase authentication.  They can select pictures from the phone's image library, take and send
+                    pictures using the device's camera, and send their location in a map image.  User conversations
+                    are also stored locally and can be viewed while the device is offline.
+                </p>
+                <a class="work-link" href="https://github.com/sarahb831/React-Native-Chat-App">React Native Chat App GitHub Repository</a><br><br>
+                <img class="portfolio__imgs" src="img\chat2.png" alt="More screenshots">
+                <img class="portfolio__imgs" src="img\chat3.png" alt="">
+                <img class="portfolio__imgs" src="img\chat4.png" alt="">
+                </div>
+
+                <!-- Portfolio item 3 -->
+                <div class="portfolio__item">
+                <h3>Meetup App</h3>
+                <img class="portfolio__img" src="img/meetup-app-screenshot.png" alt="Meetup App screenshot">
+                <p>A serverless, progressive web application (PWA) which uses the Meetup API to fetch upcoming events
+                for a selected city. It is a React application which uses Amazon Web Services (AWS) Lambda and API 
+                Gateway for serverless functions for an authorization server with OAuth2 authentication flow. It employs
+                a service worker which allows it to work offline. It also uses the Recharts library for data visualization
+                with a scatter graph and pie chart.
+                </p>
+                <a class="work-link" href="https://sarahb831.github.io/meetup-events" target="_blank">Meetup App Link</a><br>
+                <a class="work-link" href="https://github.com/sarahb831/meetup-events" target="_blank">Meetup App GitHub Repository</a><br><br>
+                </div>
+                
+                <!-- Portfolio item 4 -->
+                <div class="portfolio__item">
+                    <h3>Angular Quiz App</h3>
+                    <img class="portfolio__img" src="img/angular-quiz-app-screenshot.png" alt="Angular Quiz App screenshot">
+                    <p>A single-page application built using the Angular framework.  
+                        It allows a user to choose one of several types of quizzes.
+                        After the user selects answers for each question, the results are displayed. 
+                        The app was built using interpolation, data binding, services, routing, and
+                        Material Design.
+                    </p>
+                    <a class="work-link" href="https://sarahb831.github.io/Angular-Quiz-App/welcome" target="_blank">Angular Quiz App Link</a><br>
+                    <a class="work-link" href="https://github.com/sarahb831/Angular-Quiz-App" target="_blank">Angular Quiz App GitHub Repository</a><br><br>
+                    </div>
+            </div>
+        </section>
+        <!--
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        -->
+        <!-- About Me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">
+                Front-End Developer based out of San Francisco Bay Area
+            </p>
+
+            <div class="about-me__body">
+                <p>
+                    I live in the San Francisco Bay Area with 
+                    my family, on a small farm in the redwoods with goats, 
+                    dogs, cats, chickens, and a rabbit.
+                </p>
+                <p>
+                    I truly enjoy programming because it gives me the opportunity 
+                    to solve problems, which I love to do.
+                </p>
+                <p>
+                    I develop with users in mind by continuously ensuring that 
+                    the user interface is intuitive and easy to use.</p>
+            </div>
+
+            <!--<img src="img/smbportfolio.jpg" alt="picture of Sarah" class="about-me__img"> -->
+        </section>
+
+       
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:smbeauchamp885@gmail.com" class="footer__link">
+                smbeauchamp885@gmail.com
+            </a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
 </html>
