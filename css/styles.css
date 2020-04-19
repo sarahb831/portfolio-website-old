@@ -114,6 +114,7 @@ h3 {
 
 .section__title--intro {
     font-weight: var(-fw-reg);
+    padding-top: .75em;
 }
 
 .section__title--intro strong {
@@ -265,14 +266,19 @@ header {
 
 .section__title--intro,
 .section__subtitle--intro {
-    padding-top: .25em;
+    
     padding-bottom: .25em;
     width: 100%;
 }
 
 .section__title--intro {
     text-align: center;
+    padding-top: .75em;
 }
+
+.section__subtitle--intro {
+  padding-top: .25em;
+ }
 
 @media (min-width: 600px) {
     .intro {
